@@ -348,7 +348,7 @@ var audio=document.getElementById('bg-music');
 var musicPlaying=false;
 
 if(sessionStorage.getItem('played')){
-  audio.volume=0.5;
+  audio.volume=0.2;
   audio.play().then(function(){
     musicPlaying=true;
     musicBtn.classList.add('playing');
@@ -357,7 +357,7 @@ if(sessionStorage.getItem('played')){
 
 function startMusic(){
   sessionStorage.setItem('played','1');
-  audio.volume=0.5;
+  audio.volume=0.2;
   audio.play().then(function(){
     musicPlaying=true;
     musicBtn.classList.add('playing');
